@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --text-scale: 1rem;
+}
+
+body {
+  font-size: var(--text-scale);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+body.large-text {
+  --text-scale: 1.15rem;
+}
+
+body.extra-large-text {
+  --text-scale: 1.30rem;
+}
+
+/* High Contrast Accessibility Mode */
+body.high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.high-contrast .bg-white,
+body.high-contrast .bg-slate-50,
+body.high-contrast .bg-slate-100 {
+  background-color: #18181b !important;
+  border-color: #facc15 !important;
+  color: #ffffff !important;
+}
+
+body.high-contrast button {
+  border: 2px solid #facc15 !important;
+}
+
+body.high-contrast a {
+  color: #fef08a !important;
+  text-decoration: underline !important;
+  font-weight: 700 !important;
+}
+
+.transition-smooth {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
